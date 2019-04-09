@@ -1,6 +1,9 @@
 package demo;
 
+import org.openqa.selenium.WebDriver;
+
 import commonLibs.implementation.CommonDriver;
+import commonLibs.implementation.MouseControl;
 
 public class DemoCommonDriver {
 
@@ -14,6 +17,10 @@ public class DemoCommonDriver {
 			cmnDriver.setPageloadTimeout(30);
 			
 			cmnDriver.navigateToFirstUrl("http://qatechhub.com");
+			
+			WebDriver driver= cmnDriver.getDriver();
+			
+			MouseControl mouseControl = new MouseControl(driver);
 			
 			cmnDriver.closeAllBrowsers();
 		} catch (Exception e) {
