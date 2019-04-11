@@ -71,4 +71,16 @@ public class ElementControl implements ICommonElement {
 		}
 	}
 
+	@Override
+	public int getXLocationOfElement(WebElement element) throws Exception {
+		
+		return element.getLocation().x;
+	}
+	
+	@Override
+	public int getYLocationOfElement(WebElement element) throws Exception {
+		
+		return element.getLocation().y;
+	}
+
 }

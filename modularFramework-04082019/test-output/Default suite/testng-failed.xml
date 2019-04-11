@@ -5,7 +5,7 @@
     <classes>
       <class name="com.amazon.test.AmazonTests">
         <methods>
-          <include name="invokeBrowser"/>
+          <include name="setup"/>
           <include name="searchAProduct"/>
         </methods>
       </class> <!-- com.amazon.test.AmazonTests -->

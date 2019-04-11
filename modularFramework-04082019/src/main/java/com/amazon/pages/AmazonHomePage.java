@@ -22,6 +22,7 @@ public class AmazonHomePage extends BasePage{
 
 	public AmazonHomePage(WebDriver driver) {
 
+		super(driver);
 		PageFactory.initElements(driver, this);
 
 	}

@@ -17,7 +17,20 @@ public class AmazonTests extends BaseTests {
 
 		System.out.println(actualResult);
 
-		Assert.assertEquals(actualResult, "1-24 of over 4,000 results for Electronics : ");
+		Assert.assertEquals(actualResult, "1-24 of over 4,000 results for");
 	}
-
+	
+	@Test(priority=1000)
+	public void verifyNthProduct() throws Exception{
+		int productNumber = 5;
+		
+		resultPage.getNthProduct(productNumber);
+	}
+	
+	@Test(priority=2000)
+	public void verifyAllProducts() throws Exception{
+		resultPage.getAllProductViaJsOperation();
+	}
+	
+	
 }

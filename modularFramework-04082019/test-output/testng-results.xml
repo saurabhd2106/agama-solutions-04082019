@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38668" started-at="2019-04-10T17:15:31Z" finished-at="2019-04-10T17:16:09Z">
+  <suite name="Default suite" duration-ms="30135" started-at="2019-04-11T17:46:30Z" finished-at="2019-04-11T17:47:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38668" started-at="2019-04-10T17:15:31Z" finished-at="2019-04-10T17:16:09Z">
+    <test name="Default test" duration-ms="30135" started-at="2019-04-11T17:46:30Z" finished-at="2019-04-11T17:47:00Z">
       <class name="com.amazon.test.AmazonTests">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.amazon.test.AmazonTests@2b98378d]" name="invokeBrowser" is-config="true" duration-ms="25897" started-at="2019-04-10T17:15:31Z" finished-at="2019-04-10T17:15:57Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.test.AmazonTests@1d057a39]" name="setup" is-config="true" duration-ms="12079" started-at="2019-04-11T17:46:30Z" finished-at="2019-04-11T17:46:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="searchAProduct()[pri:0, instance:com.amazon.test.AmazonTests@2b98378d]" name="searchAProduct" duration-ms="12497" started-at="2019-04-10T17:15:57Z" finished-at="2019-04-10T17:16:09Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchAProduct()[pri:0, instance:com.amazon.test.AmazonTests@1d057a39]" name="searchAProduct" duration-ms="7342" started-at="2019-04-11T17:46:42Z" finished-at="2019-04-11T17:46:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAProduct -->
+        <test-method status="PASS" signature="verifyNthProduct()[pri:1000, instance:com.amazon.test.AmazonTests@1d057a39]" name="verifyNthProduct" duration-ms="420" started-at="2019-04-11T17:46:50Z" finished-at="2019-04-11T17:46:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNthProduct -->
+        <test-method status="PASS" signature="verifyAllProducts()[pri:2000, instance:com.amazon.test.AmazonTests@1d057a39]" name="verifyAllProducts" duration-ms="9025" started-at="2019-04-11T17:46:50Z" finished-at="2019-04-11T17:46:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllProducts -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.amazon.test.AmazonTests@1d057a39]" name="cleanUp" is-config="true" duration-ms="1166" started-at="2019-04-11T17:46:59Z" finished-at="2019-04-11T17:47:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
       </class> <!-- com.amazon.test.AmazonTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

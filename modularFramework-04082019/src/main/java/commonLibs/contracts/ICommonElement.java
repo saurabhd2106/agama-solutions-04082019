@@ -24,6 +24,8 @@ public interface ICommonElement {
 
 	public void changeCheckboxStatus(WebElement element, boolean status) throws Exception;
 
+	public int getXLocationOfElement(WebElement element) throws Exception;
 
+	public int getYLocationOfElement(WebElement element) throws Exception;
 
 }

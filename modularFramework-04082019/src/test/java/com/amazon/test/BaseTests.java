@@ -1,6 +1,7 @@
 package com.amazon.test;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.amazon.pages.AmazonHomePage;
@@ -21,10 +22,21 @@ public class BaseTests {
 
 	@BeforeClass
 	public void setup() throws Exception {
-		
+
 		invokeBrowser();
 
 		initializePages();
+	}
+
+	@AfterClass
+	public void cleanUp() throws Exception {
+		closeBrowser();
+	}
+
+	private void closeBrowser() throws Exception {
+
+		cmnDriver.closeAllBrowsers();
+
 	}
 
 	private void initializePages() {
