@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Default test</title>
+<title>TestNG:  Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
+<h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 12 01:11:00 IST 2019</td>
+<td>Started on:</td><td>Fri Apr 12 22:42:45 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35035 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22550 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,49 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.amazon.test.AmazonTests.searchAProduct()'><b>searchAProduct</b><br>Test class: com.amazon.test.AmazonTests</td>
-<td><div><pre>java.lang.AssertionError: expected [1-24 of over 4,000 results for dfg] but found [1-24 of over 4,000 results for]
+<td title='com.amazon.test.AmazonResultPageTests.searchAProduct()'><b>searchAProduct</b><br>Test class: com.amazon.test.AmazonResultPageTests</td>
+<td><div><pre>java.lang.AssertionError: expected [1-24 of over 4,000 results for dfgd] but found [1-24 of over 4,000 results for]
+	at com.amazon.test.AmazonTests.searchAProduct(AmazonTests.java:29)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace376635015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace376635015'><pre>java.lang.AssertionError: expected [1-24 of over 4,000 results for dfgd] but found [1-24 of over 4,000 results for]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.amazon.test.AmazonTests.searchAProduct(AmazonTests.java:20)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1481818223", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1481818223'><pre>java.lang.AssertionError: expected [1-24 of over 4,000 results for dfg] but found [1-24 of over 4,000 results for]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.amazon.test.AmazonTests.searchAProduct(AmazonTests.java:20)
+	at com.amazon.test.AmazonTests.searchAProduct(AmazonTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -144,8 +113,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>8</td>
-<td>com.amazon.test.AmazonTests@26be92ad</td></tr>
+<td>10</td>
+<td>com.amazon.test.AmazonResultPageTests@77caeb3e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -155,15 +124,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.amazon.test.AmazonTests.verifyAllProducts()'><b>verifyAllProducts</b><br>Test class: com.amazon.test.AmazonTests</td>
+<td title='com.amazon.test.AmazonResultPageTests.verifyAllProducts()'><b>verifyAllProducts</b><br>Test class: com.amazon.test.AmazonResultPageTests</td>
 <td></td>
 <td>10</td>
-<td>com.amazon.test.AmazonTests@26be92ad</td></tr>
+<td>com.amazon.test.AmazonResultPageTests@77caeb3e</td></tr>
 <tr>
-<td title='com.amazon.test.AmazonTests.verifyNthProduct()'><b>verifyNthProduct</b><br>Test class: com.amazon.test.AmazonTests</td>
+<td title='com.amazon.test.AmazonResultPageTests.verifyNthProduct()'><b>verifyNthProduct</b><br>Test class: com.amazon.test.AmazonResultPageTests</td>
 <td></td>
 <td>0</td>
-<td>com.amazon.test.AmazonTests@26be92ad</td></tr>
+<td>com.amazon.test.AmazonResultPageTests@77caeb3e</td></tr>
 </table><p>
 </body>
 </html>

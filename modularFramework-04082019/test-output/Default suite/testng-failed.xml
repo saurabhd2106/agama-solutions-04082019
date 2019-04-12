@@ -5,6 +5,8 @@
     <classes>
       <class name="com.amazon.test.AmazonTests">
         <methods>
+          <include name="afterAMethod"/>
+          <include name="cleanUp"/>
           <include name="setup"/>
           <include name="searchAProduct"/>
         </methods>

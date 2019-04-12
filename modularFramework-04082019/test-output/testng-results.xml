@@ -1,33 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30135" started-at="2019-04-11T17:46:30Z" finished-at="2019-04-11T17:47:00Z">
+  <suite name="Suite" duration-ms="22550" started-at="2019-04-12T17:12:45Z" finished-at="2019-04-12T17:13:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30135" started-at="2019-04-11T17:46:30Z" finished-at="2019-04-11T17:47:00Z">
-      <class name="com.amazon.test.AmazonTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.test.AmazonTests@1d057a39]" name="setup" is-config="true" duration-ms="12079" started-at="2019-04-11T17:46:30Z" finished-at="2019-04-11T17:46:42Z">
+    <test name="Test" duration-ms="22550" started-at="2019-04-12T17:12:45Z" finished-at="2019-04-12T17:13:07Z">
+      <class name="com.amazon.test.AmazonResultPageTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.test.AmazonResultPageTests@77caeb3e]" name="setup" is-config="true" duration-ms="12703" started-at="2019-04-12T17:12:32Z" finished-at="2019-04-12T17:12:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="searchAProduct()[pri:0, instance:com.amazon.test.AmazonTests@1d057a39]" name="searchAProduct" duration-ms="7342" started-at="2019-04-11T17:46:42Z" finished-at="2019-04-11T17:46:50Z">
+        <test-method status="FAIL" signature="searchAProduct()[pri:0, instance:com.amazon.test.AmazonResultPageTests@77caeb3e]" name="searchAProduct" duration-ms="10489" started-at="2019-04-12T17:12:45Z" finished-at="2019-04-12T17:12:55Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1-24 of over 4,000 results for dfgd] but found [1-24 of over 4,000 results for]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1-24 of over 4,000 results for dfgd] but found [1-24 of over 4,000 results for]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.amazon.test.AmazonTests.searchAProduct(AmazonTests.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAProduct -->
-        <test-method status="PASS" signature="verifyNthProduct()[pri:1000, instance:com.amazon.test.AmazonTests@1d057a39]" name="verifyNthProduct" duration-ms="420" started-at="2019-04-11T17:46:50Z" finished-at="2019-04-11T17:46:50Z">
+        <test-method status="PASS" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.test.AmazonResultPageTests@77caeb3e]" name="afterAMethod" is-config="true" duration-ms="910" started-at="2019-04-12T17:12:55Z" finished-at="2019-04-12T17:12:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchAProduct status=FAILURE method=AmazonTests.searchAProduct()[pri:0, instance:com.amazon.test.AmazonResultPageTests@77caeb3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAMethod -->
+        <test-method status="PASS" signature="verifyNthProduct()[pri:1000, instance:com.amazon.test.AmazonResultPageTests@77caeb3e]" name="verifyNthProduct" duration-ms="373" started-at="2019-04-12T17:12:56Z" finished-at="2019-04-12T17:12:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNthProduct -->
-        <test-method status="PASS" signature="verifyAllProducts()[pri:2000, instance:com.amazon.test.AmazonTests@1d057a39]" name="verifyAllProducts" duration-ms="9025" started-at="2019-04-11T17:46:50Z" finished-at="2019-04-11T17:46:59Z">
+        <test-method status="PASS" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.test.AmazonResultPageTests@77caeb3e]" name="afterAMethod" is-config="true" duration-ms="1" started-at="2019-04-12T17:12:57Z" finished-at="2019-04-12T17:12:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNthProduct status=SUCCESS method=AmazonResultPageTests.verifyNthProduct()[pri:1000, instance:com.amazon.test.AmazonResultPageTests@77caeb3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAMethod -->
+        <test-method status="PASS" signature="verifyAllProducts()[pri:2000, instance:com.amazon.test.AmazonResultPageTests@77caeb3e]" name="verifyAllProducts" duration-ms="10594" started-at="2019-04-12T17:12:57Z" finished-at="2019-04-12T17:13:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllProducts -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.amazon.test.AmazonTests@1d057a39]" name="cleanUp" is-config="true" duration-ms="1166" started-at="2019-04-11T17:46:59Z" finished-at="2019-04-11T17:47:00Z">
+        <test-method status="PASS" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.test.AmazonResultPageTests@77caeb3e]" name="afterAMethod" is-config="true" duration-ms="0" started-at="2019-04-12T17:13:07Z" finished-at="2019-04-12T17:13:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllProducts status=SUCCESS method=AmazonResultPageTests.verifyAllProducts()[pri:2000, instance:com.amazon.test.AmazonResultPageTests@77caeb3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAMethod -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.amazon.test.AmazonResultPageTests@77caeb3e]" name="cleanUp" is-config="true" duration-ms="2497" started-at="2019-04-12T17:13:07Z" finished-at="2019-04-12T17:13:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-      </class> <!-- com.amazon.test.AmazonTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.amazon.test.AmazonResultPageTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
