@@ -20,7 +20,8 @@ public class AmazonTests extends BaseTests {
 		extentTest.log(Status.INFO, "Searching a product : "+ product);
 		extentTest.log(Status.INFO, "and the category is : "+ category);
 		homepage.searchProduct(product, category);
-
+		
+		extentTest.log(Status.INFO, "Search for the mentioned product and category which are : "+ product+"  "+ category);
 	
 		String actualResult = resultPage.getResult();
 		extentTest.log(Status.INFO, "After searching the product - get the result "+ actualResult);
