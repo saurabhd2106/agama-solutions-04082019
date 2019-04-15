@@ -1,93 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4806" started-at="2019-04-15T17:02:37Z" finished-at="2019-04-15T17:02:41Z">
+  <suite name="Suite" duration-ms="85679" started-at="2019-04-15T17:45:51Z" finished-at="2019-04-15T17:47:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4806" started-at="2019-04-15T17:02:37Z" finished-at="2019-04-15T17:02:41Z">
-      <class name="demo.DemoTestData">
-        <test-method status="PASS" signature="printTestData(java.lang.String, java.lang.String)[pri:0, instance:demo.DemoTestData@3e6fa38a]" name="printTestData" duration-ms="75" started-at="2019-04-15T17:02:41Z" data-provider="getData" finished-at="2019-04-15T17:02:41Z">
+    <test name="Test" duration-ms="85679" started-at="2019-04-15T17:45:51Z" finished-at="2019-04-15T17:47:16Z">
+      <class name="com.amazon.test.AmazonResultPageTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.test.AmazonResultPageTests@6093dd95]" name="setup" is-config="true" duration-ms="40008" started-at="2019-04-15T17:45:11Z" finished-at="2019-04-15T17:45:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="searchAProduct()[pri:0, instance:com.amazon.test.AmazonResultPageTests@6093dd95]" name="searchAProduct" duration-ms="42893" started-at="2019-04-15T17:45:51Z" finished-at="2019-04-15T17:46:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1-24 of over 4,000 results for dfgd] but found [1-24 of over 4,000 results for]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1-24 of over 4,000 results for dfgd] but found [1-24 of over 4,000 results for]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.amazon.test.AmazonTests.searchAProduct(AmazonTests.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAProduct -->
+        <test-method status="PASS" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.test.AmazonResultPageTests@6093dd95]" name="afterAMethod" is-config="true" duration-ms="2508" started-at="2019-04-15T17:46:34Z" finished-at="2019-04-15T17:46:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Gurkirat]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abc@123]]>
+                <![CDATA[[TestResult name=searchAProduct status=FAILURE method=AmazonTests.searchAProduct()[pri:0, instance:com.amazon.test.AmazonResultPageTests@6093dd95] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printTestData -->
-        <test-method status="PASS" signature="printTestData(java.lang.String, java.lang.String)[pri:0, instance:demo.DemoTestData@3e6fa38a]" name="printTestData" duration-ms="38" started-at="2019-04-15T17:02:41Z" data-provider="getData" finished-at="2019-04-15T17:02:41Z">
+        </test-method> <!-- afterAMethod -->
+        <test-method status="PASS" signature="verifyNthProduct()[pri:1000, instance:com.amazon.test.AmazonResultPageTests@6093dd95]" name="verifyNthProduct" duration-ms="897" started-at="2019-04-15T17:46:36Z" finished-at="2019-04-15T17:46:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNthProduct -->
+        <test-method status="PASS" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.test.AmazonResultPageTests@6093dd95]" name="afterAMethod" is-config="true" duration-ms="2" started-at="2019-04-15T17:46:37Z" finished-at="2019-04-15T17:46:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Saurabh]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abc@124]]>
+                <![CDATA[[TestResult name=verifyNthProduct status=SUCCESS method=AmazonResultPageTests.verifyNthProduct()[pri:1000, instance:com.amazon.test.AmazonResultPageTests@6093dd95] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printTestData -->
-        <test-method status="PASS" signature="printTestData(java.lang.String, java.lang.String)[pri:0, instance:demo.DemoTestData@3e6fa38a]" name="printTestData" duration-ms="26" started-at="2019-04-15T17:02:41Z" data-provider="getData" finished-at="2019-04-15T17:02:41Z">
+        </test-method> <!-- afterAMethod -->
+        <test-method status="PASS" signature="verifyAllProducts()[pri:2000, instance:com.amazon.test.AmazonResultPageTests@6093dd95]" name="verifyAllProducts" duration-ms="38940" started-at="2019-04-15T17:46:37Z" finished-at="2019-04-15T17:47:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllProducts -->
+        <test-method status="PASS" signature="afterAMethod(org.testng.ITestResult)[pri:0, instance:com.amazon.test.AmazonResultPageTests@6093dd95]" name="afterAMethod" is-config="true" duration-ms="3" started-at="2019-04-15T17:47:16Z" finished-at="2019-04-15T17:47:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Preet]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abc@125]]>
+                <![CDATA[[TestResult name=verifyAllProducts status=SUCCESS method=AmazonResultPageTests.verifyAllProducts()[pri:2000, instance:com.amazon.test.AmazonResultPageTests@6093dd95] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printTestData -->
-        <test-method status="PASS" signature="printTestData(java.lang.String, java.lang.String)[pri:0, instance:demo.DemoTestData@3e6fa38a]" name="printTestData" duration-ms="22" started-at="2019-04-15T17:02:41Z" data-provider="getData" finished-at="2019-04-15T17:02:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Gagandeep]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abc@126]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- afterAMethod -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.amazon.test.AmazonResultPageTests@6093dd95]" name="cleanUp" is-config="true" duration-ms="5077" started-at="2019-04-15T17:47:17Z" finished-at="2019-04-15T17:47:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printTestData -->
-        <test-method status="PASS" signature="printTestData(java.lang.String, java.lang.String)[pri:0, instance:demo.DemoTestData@3e6fa38a]" name="printTestData" duration-ms="16" started-at="2019-04-15T17:02:41Z" data-provider="getData" finished-at="2019-04-15T17:02:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Alpher]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[fdsj@hjddsf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printTestData -->
-      </class> <!-- demo.DemoTestData -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.amazon.test.AmazonResultPageTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

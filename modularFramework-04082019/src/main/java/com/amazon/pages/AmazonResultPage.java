@@ -8,6 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import commonLibs.utils.ExcelDriver;
+import commonLibs.utils.WriteExcelsheet;
+
 public class AmazonResultPage extends BasePage {
 
 	@FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']/span[1]")
@@ -46,7 +49,7 @@ public class AmazonResultPage extends BasePage {
 		int productCount = allProduct.size();
 
 		System.out.println("Product count : " + productCount);
-		
+
 		for (WebElement product : allProduct) {
 
 			System.out.println(elementControl.getText(product));
@@ -54,42 +57,53 @@ public class AmazonResultPage extends BasePage {
 			System.out.println("------------------------------------------------------------");
 		}
 	}
-	
+
 	public void getAllProductViaScrollDownUsingMouseOperation() throws Exception {
 
 		int productCount = allProduct.size();
 
 		System.out.println("Product count : " + productCount);
-		
+
 		for (WebElement product : allProduct) {
 
 			mouseControl.moveToElement(product);
-			
+
 			System.out.println(elementControl.getText(product));
 
 			System.out.println("------------------------------------------------------------");
 		}
 	}
-	
+
 	public void getAllProductViaJsOperation() throws Exception {
 
 		int productCount = allProduct.size();
 
 		System.out.println("Product count : " + productCount);
-		
+
 		int X, Y;
+
+		WriteExcelsheet wes = new WriteExcelsheet();
+		wes.createExcelsheet();
+
+		int rowCount = 0;
+
 		for (WebElement product : allProduct) {
 
 			X = elementControl.getXLocationOfElement(product);
-			
-			Y = elementControl.getYLocationOfElement(product);
-			
-			jsControl.scrollDown(X, Y);
-			
-			System.out.println(elementControl.getText(product));
 
-			System.out.println("------------------------------------------------------------");
+			Y = elementControl.getYLocationOfElement(product);
+
+			jsControl.scrollDown(X, Y);
+
+			String productInfo = elementControl.getText(product);
+
+			wes.writeToAnExcelsheet(rowCount, 0, productInfo);
+
+			++rowCount;
 		}
+
+		wes.saveExcelsheet();
+		
 	}
 
 }
