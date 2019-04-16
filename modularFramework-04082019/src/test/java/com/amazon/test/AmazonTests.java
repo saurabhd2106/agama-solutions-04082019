@@ -27,7 +27,7 @@ public class AmazonTests extends BaseTests {
 		extentTest.log(Status.INFO, "After searching the product - get the result "+ actualResult);
 		System.out.println(actualResult);
 
-		Assert.assertEquals(actualResult, "1-24 of over 4,000 results for dfgd");
+		Assert.assertEquals(actualResult, "1-24 of over 4,000 results for");
 		
 		extentTest.log(Status.INFO, "Assert statement executed fine");
 	}
